@@ -1,0 +1,19 @@
+# Robots.txt for SkyStay - Flight & Hotel Booking
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://skystay.com/sitemap.xml
+
+# Allow Google and Bing specifically
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow admin paths (if any)
+Disallow: /admin/
+Disallow: /api/
