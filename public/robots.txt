@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://skystay.com/sitemap.xml
+Sitemap: https://flight-booking-ebon.vercel.app/sitemap.xml
 
 # Allow Google and Bing specifically
 User-agent: Googlebot

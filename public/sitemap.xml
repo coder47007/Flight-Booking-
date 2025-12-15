@@ -2,94 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://skystay.com/</loc>
+    <loc>https://flight-booking-ebon.vercel.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Blog -->
   <url>
-    <loc>https://skystay.com/blog</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  
-  <!-- Blog Posts -->
-  <url>
-    <loc>https://skystay.com/blog/cheapest-flights-to-dubai-2024</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skystay.com/blog/best-time-to-book-international-flights</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skystay.com/blog/top-10-budget-airlines-for-cheap-travel</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skystay.com/blog/london-travel-guide-flights-hotels</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skystay.com/blog/how-to-find-last-minute-flight-deals</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://skystay.com/blog/paris-travel-guide-2024</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   
   <!-- Destinations -->
   <url>
-    <loc>https://skystay.com/destinations</loc>
+    <loc>https://flight-booking-ebon.vercel.app/destinations</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  
+  <!-- Gallery -->
   <url>
-    <loc>https://skystay.com/destinations/dubai</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://flight-booking-ebon.vercel.app/gallery</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <!-- Blog Posts -->
   <url>
-    <loc>https://skystay.com/destinations/london</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog/cheapest-flights-to-dubai-2024</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skystay.com/destinations/paris</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog/how-to-find-cheap-flights</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skystay.com/destinations/tokyo</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog/best-time-to-visit-london</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skystay.com/destinations/new-york</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog/travel-packing-tips</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skystay.com/destinations/singapore</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog/budget-hotels-in-paris</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skystay.com/destinations/bangkok</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog/tokyo-japan-budget-travel-guide</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skystay.com/destinations/sydney</loc>
+    <loc>https://flight-booking-ebon.vercel.app/blog/airline-baggage-fees-guide-2024</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flight-booking-ebon.vercel.app/blog/best-hotel-booking-tips-save-money</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flight-booking-ebon.vercel.app/blog/new-york-city-travel-guide-2024</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flight-booking-ebon.vercel.app/blog/best-flight-comparison-websites-2024</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://flight-booking-ebon.vercel.app/blog/travel-insurance-guide-why-you-need-it</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
