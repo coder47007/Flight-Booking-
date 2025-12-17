@@ -31,6 +31,9 @@ function Header() {
                     <Link to="/gallery" className={`nav-link ${isActive('/gallery') ? 'active' : ''}`}>
                         Gallery
                     </Link>
+                    <Link to="/deals" className={`nav-link ${isActive('/deals') ? 'active' : ''}`}>
+                        Deals
+                    </Link>
                     <Link to="/blog" className={`nav-link ${isActive('/blog') ? 'active' : ''}`}>
                         Travel Blog
                     </Link>
@@ -60,6 +63,7 @@ function Header() {
                     <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                     <Link to="/destinations" onClick={() => setMobileMenuOpen(false)}>Destinations</Link>
                     <Link to="/gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
+                    <Link to="/deals" onClick={() => setMobileMenuOpen(false)}>Deals</Link>
                     <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Travel Blog</Link>
                     <div className="mobile-theme-toggle">
                         <ThemeToggle />

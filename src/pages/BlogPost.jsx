@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { getPostBySlug, getRelatedPosts } from '../data/blogPosts';
+import { PromoCardSingle } from '../components/PromoCards';
 
 function BlogPost() {
     const { slug } = useParams();
@@ -50,6 +51,9 @@ function BlogPost() {
                             <p>Compare prices from 500+ airlines and find the best deals.</p>
                             <Link to="/" className="btn btn-primary btn-lg">Search Flights Now →</Link>
                         </div>
+
+                        {/* Promo Card */}
+                        <PromoCardSingle provider="aviasales" />
 
                         {/* Keywords for SEO */}
                         <div className="post-tags">

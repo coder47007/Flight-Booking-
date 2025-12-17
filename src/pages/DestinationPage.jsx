@@ -1,5 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { getDestinationById, destinations } from '../data/destinations';
+import HotelDealsSection from '../components/HotelDealsSection';
+import CarRentalComparison from '../components/CarRentalComparison';
 
 function DestinationPage() {
     const { id } = useParams();
@@ -100,6 +102,12 @@ function DestinationPage() {
                                 ))}
                             </ul>
                         </section>
+
+                        {/* Hotel Deals - Cross-sell (hotels pay 3-5x more commission) */}
+                        <HotelDealsSection destination={destination.city} />
+
+                        {/* Car Rentals - Cross-sell for travelers */}
+                        <CarRentalComparison location={destination.city} />
 
                         {/* CTA */}
                         <section className="dest-cta">

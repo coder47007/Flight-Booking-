@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { blogPosts, categories } from '../data/blogPosts';
+import PromoCards from '../components/PromoCards';
 
 function Blog() {
     const [activeCategory, setActiveCategory] = useState('All');
@@ -55,6 +56,9 @@ function Blog() {
                         </article>
                     ))}
                 </div>
+
+                {/* Professional Promo Cards */}
+                <PromoCards />
 
                 {/* SEO Text */}
                 <section className="seo-content">

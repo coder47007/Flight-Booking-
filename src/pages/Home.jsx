@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 import { travelGallery } from '../data/gallery';
 import { useTrendingDestinations, formatLastUpdated } from '../hooks/useTrendingDestinations';
+import FlightPriceComparison from '../components/FlightPriceComparison';
+import HotelDealsSection from '../components/HotelDealsSection';
+import PromoCards from '../components/PromoCards';
 
 function Home() {
     const [searchType, setSearchType] = useState('flights');
     const [isSearching, setIsSearching] = useState(false);
+    const [showComparison, setShowComparison] = useState(false);
     const [formData, setFormData] = useState({
         from: '',
         to: '',
@@ -80,6 +84,12 @@ function Home() {
         }
 
         window.open(searchUrl, '_blank', 'noopener,noreferrer');
+
+        // Show comparison for flights
+        if (searchType === 'flights') {
+            setShowComparison(true);
+        }
+
         setTimeout(() => setIsSearching(false), 1000);
     };
 
@@ -218,6 +228,27 @@ function Home() {
                             </button>
                         </div>
                     </form>
+
+                    {/* Flight Price Comparison - Shows after search */}
+                    {searchType === 'flights' && (
+                        <FlightPriceComparison
+                            from={formData.from}
+                            to={formData.to}
+                            departDate={formData.checkIn}
+                            returnDate={formData.checkOut}
+                            passengers={formData.passengers}
+                            isVisible={showComparison}
+                        />
+                    )}
+
+                    {/* Hotel Deals - Shows after flight search (hotels earn 3-5x more) */}
+                    {showComparison && searchType === 'flights' && formData.to && (
+                        <HotelDealsSection
+                            destination={formData.to}
+                            checkIn={formData.checkIn}
+                            checkOut={formData.checkOut}
+                        />
+                    )}
                 </div>
 
                 {/* Features */}
@@ -243,6 +274,9 @@ function Home() {
                         <p>Book directly with trusted providers</p>
                     </div>
                 </div>
+
+                {/* Professional Promo Cards with Travel Images */}
+                <PromoCards />
 
                 {/* Scroll Indicator */}
                 <div className="scroll-indicator" onClick={() => window.scrollBy({ top: 500, behavior: 'smooth' })}>
