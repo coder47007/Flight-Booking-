@@ -12,23 +12,9 @@ export const travelRequirements = [
         language: "French",
         voltage: "230V (Type E)",
         sources: ["France Diplomacy", "Travel.gc.ca"],
-        famousPlaces: [
-            {
-                name: "Eiffel Tower",
-                image: "https://images.unsplash.com/photo-1511739001486-91ded02752dd?w=800&q=80",
-                description: "The iron lady of Paris, offering breathtaking city views."
-            },
-            {
-                name: "Louvre Museum",
-                image: "https://images.unsplash.com/photo-1499856871940-a09627c6dcf6?w=800&q=80",
-                description: "Home to the Mona Lisa and thousands of classic artworks."
-            },
-            {
-                name: "French Riviera",
-                image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
-                description: "Glamorous beaches and charming coastal towns like Nice and Cannes."
-            }
-        ]
+        capital: "Paris",
+        lat: 48.8566,
+        long: 2.3522
     },
     {
         id: 2,
@@ -42,23 +28,9 @@ export const travelRequirements = [
         language: "Japanese",
         voltage: "100V (Type A/B)",
         sources: ["Japan National Tourism Org", "US State Dept"],
-        famousPlaces: [
-            {
-                name: "Mount Fuji",
-                image: "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=800&q=80",
-                description: "Japan's iconic active volcano and sacred mountain."
-            },
-            {
-                name: "Kyoto Temples",
-                image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
-                description: "Ancient shrines like Fushimi Inari and Kinkaku-ji."
-            },
-            {
-                name: "Shibuya Crossing",
-                image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800&q=80",
-                description: "The busiest pedestrian crossing in the world, located in Tokyo."
-            }
-        ]
+        capital: "Tokyo",
+        lat: 35.6762,
+        long: 139.6503
     },
     {
         id: 3,
@@ -72,23 +44,9 @@ export const travelRequirements = [
         language: "English",
         voltage: "230V (Type G - Warning: Needs Adapter)",
         sources: ["GOV.UK", "Travel.gc.ca"],
-        famousPlaces: [
-            {
-                name: "Big Ben & Parliament",
-                image: "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=800&q=80",
-                description: "The iconic clock tower and seat of the UK government."
-            },
-            {
-                name: "Tower Bridge",
-                image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80",
-                description: "A defining engineering marvel of the London skyline."
-            },
-            {
-                name: "Scottish Highlands",
-                image: "https://images.unsplash.com/photo-1506377550980-bc039ed09e80?w=800&q=80",
-                description: "Rugged mountains, deep lochs, and historic castles."
-            }
-        ]
+        capital: "London",
+        lat: 51.5074,
+        long: -0.1278
     },
     {
         id: 4,
@@ -102,23 +60,9 @@ export const travelRequirements = [
         language: "English",
         voltage: "120V (Type A/B)",
         sources: ["US Customs & Border Protection", "Travel.gc.ca"],
-        famousPlaces: [
-            {
-                name: "Statue of Liberty",
-                image: "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?w=800&q=80",
-                description: "Universal symbol of freedom in New York Harbor."
-            },
-            {
-                name: "Grand Canyon",
-                image: "https://images.unsplash.com/photo-1474044159687-195f007c9b27?w=800&q=80",
-                description: "A mile-deep gorge carved by the Colorado River."
-            },
-            {
-                name: "Las Vegas Strip",
-                image: "https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=800&q=80",
-                description: "World-famous resort city known for gambling and entertainment."
-            }
-        ]
+        capital: "New York City",
+        lat: 40.7128,
+        long: -74.0060
     },
     {
         id: 5,
@@ -132,23 +76,9 @@ export const travelRequirements = [
         language: "Spanish",
         voltage: "127V (Type A/B)",
         sources: ["Gobierno de México", "US State Dept"],
-        famousPlaces: [
-            {
-                name: "Chichen Itza",
-                image: "https://images.unsplash.com/photo-1518638151313-982d5438c825?w=800&q=80",
-                description: "A complex of Mayan ruins and one of the New 7 Wonders."
-            },
-            {
-                name: "Tulum Beaches",
-                image: "https://images.unsplash.com/photo-1504730655569-4e12501a3507?w=800&q=80",
-                description: "Ancient ruins overlooking pristine Caribbean waters."
-            },
-            {
-                name: "Cenotes (Yucatan)",
-                image: "https://images.unsplash.com/photo-1533591380348-14193f1915f8?w=800&q=80",
-                description: "Natural limestone swimming holes unique to the region."
-            }
-        ]
+        capital: "Mexico City",
+        lat: 19.4326,
+        long: -99.1332
     },
     {
         id: 6,
@@ -162,23 +92,9 @@ export const travelRequirements = [
         language: "Italian",
         voltage: "230V (Type F/L)",
         sources: ["Viaggiare Sicuri", "Travel.gc.ca"],
-        famousPlaces: [
-            {
-                name: "The Colosseum",
-                image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80",
-                description: "The largest amphitheater ever built, center of ancient Rome."
-            },
-            {
-                name: "Venice Canals",
-                image: "https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?w=800&q=80",
-                description: "Historic city built on water, famous for gondola rides."
-            },
-            {
-                name: "Amalfi Coast",
-                image: "https://images.unsplash.com/photo-1633321088355-d0f81f5c6b6c?w=800&q=80",
-                description: "Dramatic coastline with colorful villages like Positano."
-            }
-        ]
+        capital: "Rome",
+        lat: 41.9028,
+        long: 12.4964
     },
     {
         id: 7,
@@ -192,23 +108,9 @@ export const travelRequirements = [
         language: "Spanish",
         voltage: "230V (Type F)",
         sources: ["Spain Ministry of Foreign Affairs", "US State Dept"],
-        famousPlaces: [
-            {
-                name: "Sagrada Familia",
-                image: "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800&q=80",
-                description: "Gaudí's masterpiece basilica in Barcelona, still unfinished."
-            },
-            {
-                name: "Ibiza",
-                image: "https://images.unsplash.com/photo-1518557984649-7b16d92815bd?w=800&q=80",
-                description: "World-famous island for nightlife and stunning beaches."
-            },
-            {
-                name: "Alhambra",
-                image: "https://images.unsplash.com/photo-1564887707324-da172f3273e8?w=800&q=80",
-                description: "Stunning palace and fortress complex in Granada."
-            }
-        ]
+        capital: "Madrid",
+        lat: 40.4168,
+        long: -3.7038
     },
     {
         id: 8,
@@ -222,23 +124,9 @@ export const travelRequirements = [
         language: "Thai",
         voltage: "220V (Type A/C)",
         sources: ["Tourism Authority of Thailand", "UK FCDO"],
-        famousPlaces: [
-            {
-                name: "The Grand Palace",
-                image: "https://images.unsplash.com/photo-1582236967733-145455648939?w=800&q=80",
-                description: "The spectacular official residence of the Kings of Siam."
-            },
-            {
-                name: "Phi Phi Islands",
-                image: "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=800&q=80",
-                description: "Crystal clear waters and limestone cliffs."
-            },
-            {
-                name: "Chiang Mai Temples",
-                image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80",
-                description: "Ancient temples like Wat Chedi Luang in the mountains."
-            }
-        ]
+        capital: "Bangkok",
+        lat: 13.7563,
+        long: 100.5018
     },
     {
         id: 9,
@@ -252,23 +140,9 @@ export const travelRequirements = [
         language: "English",
         voltage: "230V (Type I)",
         sources: ["Home Affairs Australia", "Travel.gc.ca"],
-        famousPlaces: [
-            {
-                name: "Sydney Opera House",
-                image: "https://images.unsplash.com/photo-1523482580638-01c63b6a709f?w=800&q=80",
-                description: "Architectural masterpiece on Sydney Harbour."
-            },
-            {
-                name: "Great Barrier Reef",
-                image: "https://images.unsplash.com/photo-1583212234801-62f56823164e?w=800&q=80",
-                description: "The world's largest coral reef system, visible from space."
-            },
-            {
-                name: "Uluru",
-                image: "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=800&q=80",
-                description: "Massive sandstone monolith in the heart of the Northern Territory."
-            }
-        ]
+        capital: "Sydney",
+        lat: -33.8688,
+        long: 151.2093
     },
     {
         id: 10,
@@ -282,28 +156,9 @@ export const travelRequirements = [
         language: "Arabic (English widely spoken)",
         voltage: "220V (Type G)",
         sources: ["UAE Government Portal", "US State Dept"],
-        famousPlaces: [
-            {
-                name: "Burj Khalifa",
-                image: "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800&q=80",
-                description: "The world's tallest building, dominating the Dubai skyline."
-            },
-            {
-                name: "Palm Jumeirah",
-                image: "https://images.unsplash.com/photo-1512453979798-5ea904f47624?w=800&q=80",
-                description: "Iconic palm-shaped artificial island."
-            },
-            {
-                name: "Sheikh Zayed Mosque",
-                image: "https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80",
-                description: "Massive, stunning white marble mosque in Abu Dhabi."
-            },
-            {
-                name: "Desert Safari",
-                image: "https://images.unsplash.com/photo-1451440068599-c3735071a94f?w=800&q=80",
-                description: "Thrilling dune bashing and traditional desert camps."
-            }
-        ]
+        capital: "Dubai",
+        lat: 25.2048,
+        long: 55.2708
     },
     {
         id: 11,
@@ -317,23 +172,9 @@ export const travelRequirements = [
         language: "Turkish",
         voltage: "230V (Type F)",
         sources: ["Republic of Türkiye MFA", "Travel.gc.ca"],
-        famousPlaces: [
-            {
-                name: "Hagia Sophia",
-                image: "https://images.unsplash.com/photo-1545920703-a26b77207c4c?w=800&q=80",
-                description: "Historic place of worship with massive dome and mosaics."
-            },
-            {
-                name: "Cappadocia",
-                image: "https://images.unsplash.com/photo-1641128328198-15fc9b4de741?w=800&q=80",
-                description: "Famous for its unique rock formations and hot air balloons."
-            },
-            {
-                name: "Pamukkale",
-                image: "https://images.unsplash.com/photo-1529949712779-19ec47596d65?w=800&q=80",
-                description: "Surreal white travertine thermal pools."
-            }
-        ]
+        capital: "Istanbul",
+        lat: 41.0082,
+        long: 28.9784
     },
     {
         id: 12,
@@ -347,23 +188,9 @@ export const travelRequirements = [
         language: "German",
         voltage: "230V (Type F)",
         sources: ["German Missions", "UK FCDO"],
-        famousPlaces: [
-            {
-                name: "Neuschwanstein Castle",
-                image: "https://images.unsplash.com/photo-1579569736853-b0f34045432a?w=800&q=80",
-                description: "The fairytale castle that inspired Disney's Cinderella castle."
-            },
-            {
-                name: "Brandenburg Gate",
-                image: "https://images.unsplash.com/photo-1560930950-5cc20e80e392?w=800&q=80",
-                description: "18th-century neoclassical monument in Berlin."
-            },
-            {
-                name: "Oktoberfest (Munich)",
-                image: "https://images.unsplash.com/photo-1559160581-44bd4b5677a2?w=800&q=80",
-                description: "The world's largest Volksfest (beer festival)."
-            }
-        ]
+        capital: "Berlin",
+        lat: 52.5200,
+        long: 13.4050
     },
     {
         id: 13,
@@ -377,23 +204,9 @@ export const travelRequirements = [
         language: "Indonesian",
         voltage: "230V (Type C/F)",
         sources: ["Indonesian Immigration", "US State Dept"],
-        famousPlaces: [
-            {
-                name: "Bali Rice Terraces",
-                image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&q=80",
-                description: "Stunning green landscapes in Ubud."
-            },
-            {
-                name: "Uluwatu Temple",
-                image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
-                description: "Sea temple perched on a steep cliff."
-            },
-            {
-                name: "Nusa Penida",
-                image: "https://images.unsplash.com/photo-1549448834-31e74a87ad18?w=800&q=80",
-                description: "Island known for Kelingking Beach's T-Rex shape."
-            }
-        ]
+        capital: "Bali (Denpasar)",
+        lat: -8.6705,
+        long: 115.2126
     },
     {
         id: 14,
@@ -407,23 +220,9 @@ export const travelRequirements = [
         language: "English, French",
         voltage: "120V (Type A/B)",
         sources: ["Canada.ca", "US State Dept"],
-        famousPlaces: [
-            {
-                name: "Banff National Park",
-                image: "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800&q=80",
-                description: "Turquoise lakes and Rocky Mountain peaks."
-            },
-            {
-                name: "CN Tower",
-                image: "https://images.unsplash.com/photo-1506169894395-36397e4aaee5?w=800&q=80",
-                description: "Dominating the Toronto skyline, featuring a glass floor."
-            },
-            {
-                name: "Niagara Falls",
-                image: "https://images.unsplash.com/photo-1534062098679-5095d32c525f?w=800&q=80",
-                description: "Famous group of massive waterfalls on the US border."
-            }
-        ]
+        capital: "Toronto",
+        lat: 43.6510,
+        long: -79.3470
     },
     {
         id: 15,
@@ -437,22 +236,8 @@ export const travelRequirements = [
         language: "Portuguese",
         voltage: "230V (Type F)",
         sources: ["Visit Portugal", "UK FCDO"],
-        famousPlaces: [
-            {
-                name: "Belem Tower",
-                image: "https://images.unsplash.com/photo-1546702656-78ab5a23f46f?w=800&q=80",
-                description: "Historic fortified tower in Lisbon."
-            },
-            {
-                name: "Algarve Beaches",
-                image: "https://images.unsplash.com/photo-1565576189569-826d4b4556a3?w=800&q=80",
-                description: "Golden cliffs and turquoise waters in the south."
-            },
-            {
-                name: "Pena Palace",
-                image: "https://images.unsplash.com/photo-1543328574-d4b68448eb06?w=800&q=80",
-                description: "Colorful Romanticist castle in Sintra."
-            }
-        ]
+        capital: "Lisbon",
+        lat: 38.7223,
+        long: -9.1393
     }
 ];

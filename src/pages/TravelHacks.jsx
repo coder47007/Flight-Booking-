@@ -1,7 +1,71 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 import { travelRequirements } from '../data/travelRequirements';
+
+// Helper to get weather icon
+const getWeatherIcon = (code) => {
+    if (code === 0) return '☀️'; // Clear
+    if (code >= 1 && code <= 3) return '⛅'; // Cloudy
+    if (code >= 45 && code <= 48) return '🌫️'; // Fog
+    if (code >= 51 && code <= 67) return '🌧️'; // Rain
+    if (code >= 71 && code <= 77) return '❄️'; // Snow
+    if (code >= 80 && code <= 82) return '🌦️'; // Showers
+    if (code >= 95) return '⛈️'; // Thunderstorm
+    return '🌡️';
+};
+
+const WeatherWidget = ({ lat, long, city }) => {
+    const [weather, setWeather] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchWeather = async () => {
+            setLoading(true);
+            try {
+                const response = await fetch(
+                    `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=auto`
+                );
+                const data = await response.json();
+                setWeather(data);
+            } catch (error) {
+                console.error("Weather fetch failed", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        if (lat && long) {
+            fetchWeather();
+        }
+    }, [lat, long]);
+
+    if (loading) return <div className="weather-loading">Loading 7-Day Forecast... 🌥️</div>;
+    if (!weather || !weather.daily) return null;
+
+    return (
+        <div className="weather-widget">
+            <h4>7-Day Forecast for {city} 🌤️</h4>
+            <div className="forecast-row">
+                {weather.daily.time.map((date, index) => {
+                    const dayName = new Date(date).toLocaleDateString('en-US', { weekday: 'short' });
+                    const code = weather.daily.weathercode[index];
+                    const max = Math.round(weather.daily.temperature_2m_max[index]);
+                    const min = Math.round(weather.daily.temperature_2m_min[index]);
+
+                    return (
+                        <div key={index} className="forecast-day">
+                            <span className="day-name">{dayName}</span>
+                            <span className="weather-icon">{getWeatherIcon(code)}</span>
+                            <span className="temp-high">{max}°</span>
+                            <span className="temp-low">{min}°</span>
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+    );
+};
 
 const TravelHacks = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -44,7 +108,7 @@ const TravelHacks = () => {
                         value={searchTerm}
                         onChange={(e) => {
                             setSearchTerm(e.target.value);
-                            setSelectedCountry(null); // Reset selection on new search
+                            setSelectedCountry(null);
                         }}
                     />
                     {searchTerm && (
@@ -55,7 +119,7 @@ const TravelHacks = () => {
                                     className="search-result-item"
                                     onClick={() => {
                                         setSelectedCountry(country);
-                                        setSearchTerm(''); // Clear search on selection
+                                        setSearchTerm('');
                                     }}
                                 >
                                     <span className="result-flag">{country.flag}</span>
@@ -106,24 +170,7 @@ const TravelHacks = () => {
                             </div>
                         </div>
 
-                        {selectedCountry.famousPlaces && (
-                            <div className="famous-places-section">
-                                <h4>Top 2 Must-Visit Spots in {selectedCountry.country} 📸</h4>
-                                <div className="places-grid">
-                                    {selectedCountry.famousPlaces.slice(0, 2).map((place, idx) => (
-                                        <div key={idx} className="place-card">
-                                            <div className="place-image">
-                                                <img src={place.image} alt={place.name} />
-                                            </div>
-                                            <div className="place-info">
-                                                <h5>{place.name}</h5>
-                                                <p>{place.description}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
+                        <WeatherWidget lat={selectedCountry.lat} long={selectedCountry.long} city={selectedCountry.capital} />
                     </div>
                 )}
             </div>
@@ -292,60 +339,62 @@ const TravelHacks = () => {
                     margin-right: 10px;
                     margin-bottom: 5px;
                 }
-                /* Famous Places Styles */
-                .famous-places-section {
+                .weather-widget {
                     margin-top: 30px;
                     padding-top: 20px;
                     border-top: 1px solid #eee;
                 }
-                .famous-places-section h4 {
-                    font-size: 1.4rem;
-                    margin-bottom: 25px;
-                    color: #2d3436;
+                .weather-widget h4 {
+                    font-size: 1.2rem;
                     text-align: center;
-                }
-                .places-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                    gap: 30px;
-                }
-                .place-card {
-                    background: white;
-                    border-radius: 15px;
-                    overflow: hidden;
-                    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-                    transition: transform 0.3s;
-                    border: none;
-                }
-                .place-card:hover {
-                    transform: translateY(-5px);
-                }
-                .place-image {
-                    height: 250px; /* Increased from 160px for bigger impact */
-                    overflow: hidden;
-                }
-                .place-image img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: transform 0.5s;
-                }
-                .place-card:hover .place-image img {
-                    transform: scale(1.05);
-                }
-                .place-info {
-                    padding: 20px;
-                }
-                .place-info h5 {
-                    margin: 0 0 8px;
-                    font-size: 1.3rem;
+                    margin-bottom: 20px;
                     color: #2d3436;
                 }
-                .place-info p {
-                    margin: 0;
+                .weather-loading {
+                    text-align: center;
+                    padding: 20px;
                     color: #636e72;
-                    font-size: 1rem;
-                    line-height: 1.5;
+                    font-style: italic;
+                }
+                .forecast-row {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    overflow-x: auto;
+                    padding-bottom: 10px;
+                }
+                .forecast-day {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background: #f1f3f5;
+                    padding: 10px;
+                    border-radius: 10px;
+                    min-width: 60px;
+                    transition: transform 0.2s;
+                }
+                .forecast-day:hover {
+                    transform: translateY(-3px);
+                    background: #e3f2fd;
+                }
+                .day-name {
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                    color: #636e72;
+                    margin-bottom: 5px;
+                }
+                .weather-icon {
+                    font-size: 1.5rem;
+                    margin-bottom: 5px;
+                }
+                .temp-high {
+                    font-weight: 700;
+                    color: #2d3436;
+                    font-size: 0.95rem;
+                }
+                .temp-low {
+                    font-size: 0.8rem;
+                    color: #b2bec3;
                 }
 
                 .trusted-sources-section {
