@@ -71,14 +71,6 @@ const TravelHacks = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCountry, setSelectedCountry] = useState(null);
 
-    // Filter posts for relevant categories
-    const hacksPosts = blogPosts.filter(post =>
-        ['Travel Tips', 'Cheap Flights', 'Travel Hacks', 'Airline News'].includes(post.category) ||
-        post.title.toLowerCase().includes('hack') ||
-        post.title.toLowerCase().includes('deal') ||
-        post.title.toLowerCase().includes('tip')
-    );
-
     // Filter countries based on search logic (Name OR Keywords)
     const filteredCountries = travelRequirements.filter(req => {
         const term = searchTerm.toLowerCase();
@@ -206,26 +198,6 @@ const TravelHacks = () => {
                             <p>Passport & Visa Rules</p>
                         </div>
                     </a>
-                </div>
-            </div>
-
-            <div className="container hacks-content">
-                <h2>Latest Travel News & Tips 📰</h2>
-                <div className="hacks-grid">
-                    {hacksPosts.map(post => (
-                        <article key={post.id} className="hack-card">
-                            <div className="hack-image">
-                                <img src={post.image} alt={post.title} />
-                                <span className="hack-category">{post.category}</span>
-                            </div>
-                            <div className="hack-details">
-                                <span className="hack-date">{post.date}</span>
-                                <h2><Link to={`/blog/${post.slug}`}>{post.title}</Link></h2>
-                                <p>{post.excerpt}</p>
-                                <Link to={`/blog/${post.slug}`} className="read-more">Read details →</Link>
-                            </div>
-                        </article>
-                    ))}
                 </div>
             </div>
 
@@ -434,71 +406,6 @@ const TravelHacks = () => {
                     margin: 5px 0 0;
                     font-size: 0.9rem;
                     color: #636e72;
-                }
-                .hacks-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                    gap: 30px;
-                    padding-bottom: 60px;
-                }
-                .hack-card {
-                    background: white;
-                    border-radius: 12px;
-                    overflow: hidden;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-                    transition: transform 0.3s ease;
-                }
-                .hack-card:hover {
-                    transform: translateY(-5px);
-                }
-                .hack-image {
-                    height: 200px;
-                    position: relative;
-                }
-                .hack-image img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-                .hack-category {
-                    position: absolute;
-                    top: 15px;
-                    right: 15px;
-                    background: #0984e3;
-                    color: white;
-                    padding: 5px 12px;
-                    border-radius: 20px;
-                    font-size: 0.8rem;
-                    font-weight: 600;
-                }
-                .hack-details {
-                    padding: 20px;
-                }
-                .hack-date {
-                    color: #888;
-                    font-size: 0.9rem;
-                    display: block;
-                    margin-bottom: 10px;
-                }
-                .hack-details h2 {
-                    font-size: 1.3rem;
-                    margin-bottom: 10px;
-                    line-height: 1.4;
-                }
-                .hack-details h2 a {
-                    color: #2d3436;
-                    text-decoration: none;
-                }
-                .hack-details p {
-                    color: #636e72;
-                    font-size: 0.95rem;
-                    line-height: 1.6;
-                    margin-bottom: 15px;
-                }
-                .read-more {
-                    color: #0984e3;
-                    text-decoration: none;
-                    font-weight: 600;
                 }
                 .animate-fade-in {
                     animation: fadeIn 0.4s ease-out;

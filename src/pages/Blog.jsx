@@ -60,6 +60,37 @@ function Blog() {
                 {/* Professional Promo Cards */}
                 <PromoCards />
 
+                {/* Travel News & Hacks Section */}
+                <section className="travel-news-section">
+                    <h2>Latest Travel News & Hacks 📰</h2>
+                    <div className="blog-grid">
+                        {blogPosts.filter(post =>
+                            ['Travel Tips', 'Cheap Flights', 'Travel Hacks', 'Airline News'].includes(post.category) ||
+                            post.title.toLowerCase().includes('hack') ||
+                            post.title.toLowerCase().includes('deal') ||
+                            post.title.toLowerCase().includes('tip')
+                        ).slice(0, 6).map(post => (
+                            <article key={post.id} className="blog-card">
+                                <Link to={`/blog/${post.slug}`}>
+                                    <div className="blog-card-image">
+                                        <img src={post.image} alt={post.title} loading="lazy" />
+                                        <span className="blog-category">{post.category}</span>
+                                    </div>
+                                    <div className="blog-card-content">
+                                        <h2>{post.title}</h2>
+                                        <p>{post.excerpt}</p>
+                                        <div className="blog-meta">
+                                            <span>{post.date}</span>
+                                            <span>•</span>
+                                            <span>{post.readTime}</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </article>
+                        ))}
+                    </div>
+                </section>
+
                 {/* SEO Text */}
                 <section className="seo-content">
                     <h2>Your Guide to Cheap Flights & Travel Deals</h2>
