@@ -20,31 +20,37 @@ async function generateBlog() {
         const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
         const topics = [
+            "Cheap Flights from Toronto Today", "Calgary to Vancouver Flight Deals",
+            "Montreal to Paris Price Drops", "Halifax to London Route Updates",
+            "USA Travel Rule Updates", "Spring Break Flight Deals",
+            "Airline Disruptions & Cancellations", "Best Day to Book Flights 2025",
+            "Travel Hacks to Save Money", "Hidden Airfare Sales",
+            "Credit Card Points for Travel", "Mistake Fares Explained",
             "Budget Travel Tips", "Hidden Gems in Europe", "Solo Travel Guides",
-            "Family Vacation Ideas", "Luxury Travel for Less", "Airline Reviews",
-            "Travel Tech & Gadgets", "Sustainable Travel", "Foodie Destionations",
-            "Digital Nomad Lifestyle", "Weekend Getaways", "Flight Booking Hacks"
+            "Family Vacation Ideas", "Luxury Travel for Less"
         ];
 
         const randomTopic = topics[Math.floor(Math.random() * topics.length)];
         const today = new Date().toISOString().split('T')[0];
 
         const prompt = `
-    Write a SEO-optimized blog post about "${randomTopic}" for a flight booking website.
+    Write a catchy, high-traffic "Daily Travel Hack" or "Flight Deal" blog post about "${randomTopic}".
+    Target audience: travelers looking for immediate deals, news, or money-saving hacks.
+    
     Return ONLY a valid JSON object with the following structure:
     {
       "slug": "url-friendly-slug",
-      "title": "Catchy Title",
-      "excerpt": "Short engaging summary (approx 2 sentences)",
-      "category": "One of: Cheap Flights, Travel Tips, Destination Guides",
+      "title": "Catchy Viral Title (e.g., 'Price Drop: London Flights Under $400')",
+      "excerpt": "Urgent or exciting summary (approx 2 sentences).",
+      "category": "One of: Travel Hacks, Flight Deals, Airline News, Cheap Flights, Travel Tips",
       "author": "Travel Team",
-      "readTime": "e.g. 5 min read",
+      "readTime": "e.g. 4 min read",
       "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800",
-      "keywords": ["keyword1", "keyword2"],
-      "content": "Full blog content in Markdown format. Use h1, h2, h3 for headers."
+      "keywords": ["keyword1", "keyword2", "viral travel", "travel news"],
+      "content": "Full blog content in Markdown format. Use h1, h2, h3. Include 'Pro Tip' sections."
     }
-    The content should be at least 600 words, engaging, and informative. 
-    For the image, use a relevant unsplash URL (you can reuse the one in the example if you can't find a specific one, but try to vary it based on topic).
+    The content should be at least 600 words, engaging, and authoritative.
+    For the image, use a relevant unsplash URL.
     DO NOT include any text outside the JSON object.
     `;
 

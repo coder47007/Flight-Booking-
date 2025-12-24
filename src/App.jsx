@@ -9,6 +9,7 @@ import Destinations from './pages/Destinations';
 import DestinationPage from './pages/DestinationPage';
 import Gallery from './pages/Gallery';
 import DealsPage from './pages/DealsPage';
+import TravelHacks from './pages/TravelHacks';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                             <Route path="/gallery" element={<Gallery />} />
                             <Route path="/deals" element={<DealsPage />} />
                             <Route path="/deals/:slug" element={<DealsPage />} />
+                            <Route path="/travel-hacks" element={<TravelHacks />} />
                         </Routes>
                     </main>
                     <Footer />
