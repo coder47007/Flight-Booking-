@@ -108,9 +108,9 @@ const TravelHacks = () => {
 
                         {selectedCountry.famousPlaces && (
                             <div className="famous-places-section">
-                                <h4>Must Visit in {selectedCountry.country} 📸</h4>
+                                <h4>Top 2 Must-Visit Spots in {selectedCountry.country} 📸</h4>
                                 <div className="places-grid">
-                                    {selectedCountry.famousPlaces.map((place, idx) => (
+                                    {selectedCountry.famousPlaces.slice(0, 2).map((place, idx) => (
                                         <div key={idx} className="place-card">
                                             <div className="place-image">
                                                 <img src={place.image} alt={place.name} />
@@ -299,49 +299,53 @@ const TravelHacks = () => {
                     border-top: 1px solid #eee;
                 }
                 .famous-places-section h4 {
-                    font-size: 1.2rem;
-                    margin-bottom: 20px;
+                    font-size: 1.4rem;
+                    margin-bottom: 25px;
                     color: #2d3436;
                     text-align: center;
                 }
                 .places-grid {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                    gap: 20px;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 30px;
                 }
                 .place-card {
                     background: white;
-                    border-radius: 10px;
+                    border-radius: 15px;
                     overflow: hidden;
-                    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Enhance shadow */
-                    transition: transform 0.2s;
-                    border: 1px solid #f0f0f0;
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+                    transition: transform 0.3s;
+                    border: none;
                 }
                 .place-card:hover {
                     transform: translateY(-5px);
                 }
                 .place-image {
-                    height: 160px;
+                    height: 250px; /* Increased from 160px for bigger impact */
                     overflow: hidden;
                 }
                 .place-image img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: transform 0.5s;
+                }
+                .place-card:hover .place-image img {
+                    transform: scale(1.05);
                 }
                 .place-info {
-                    padding: 15px;
+                    padding: 20px;
                 }
                 .place-info h5 {
-                    margin: 0 0 5px;
-                    font-size: 1.1rem;
+                    margin: 0 0 8px;
+                    font-size: 1.3rem;
                     color: #2d3436;
                 }
                 .place-info p {
                     margin: 0;
                     color: #636e72;
-                    font-size: 0.9rem;
-                    line-height: 1.4;
+                    font-size: 1rem;
+                    line-height: 1.5;
                 }
 
                 .trusted-sources-section {
