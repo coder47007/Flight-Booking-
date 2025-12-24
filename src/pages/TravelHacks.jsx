@@ -15,10 +15,12 @@ const TravelHacks = () => {
         post.title.toLowerCase().includes('tip')
     );
 
-    // Filter countries based on search
-    const filteredCountries = travelRequirements.filter(req =>
-        req.country.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    // Filter countries based on search logic (Name OR Keywords)
+    const filteredCountries = travelRequirements.filter(req => {
+        const term = searchTerm.toLowerCase();
+        return req.country.toLowerCase().includes(term) ||
+            (req.keywords && req.keywords.some(k => k.toLowerCase().includes(term)));
+    });
 
     return (
         <div className="travel-hacks-page">
@@ -38,7 +40,7 @@ const TravelHacks = () => {
                 <div className="search-box">
                     <input
                         type="text"
-                        placeholder="Search destination (e.g., Japan, France)..."
+                        placeholder="Search destination (e.g., Dubai, Paris, Japan)..."
                         value={searchTerm}
                         onChange={(e) => {
                             setSearchTerm(e.target.value);
@@ -103,6 +105,25 @@ const TravelHacks = () => {
                                 </div>
                             </div>
                         </div>
+
+                        {selectedCountry.famousPlaces && (
+                            <div className="famous-places-section">
+                                <h4>Must Visit in {selectedCountry.country} 📸</h4>
+                                <div className="places-grid">
+                                    {selectedCountry.famousPlaces.map((place, idx) => (
+                                        <div key={idx} className="place-card">
+                                            <div className="place-image">
+                                                <img src={place.image} alt={place.name} />
+                                            </div>
+                                            <div className="place-info">
+                                                <h5>{place.name}</h5>
+                                                <p>{place.description}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 )}
             </div>
@@ -271,6 +292,58 @@ const TravelHacks = () => {
                     margin-right: 10px;
                     margin-bottom: 5px;
                 }
+                /* Famous Places Styles */
+                .famous-places-section {
+                    margin-top: 30px;
+                    padding-top: 20px;
+                    border-top: 1px solid #eee;
+                }
+                .famous-places-section h4 {
+                    font-size: 1.2rem;
+                    margin-bottom: 20px;
+                    color: #2d3436;
+                    text-align: center;
+                }
+                .places-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 20px;
+                }
+                .place-card {
+                    background: white;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Enhance shadow */
+                    transition: transform 0.2s;
+                    border: 1px solid #f0f0f0;
+                }
+                .place-card:hover {
+                    transform: translateY(-5px);
+                }
+                .place-image {
+                    height: 160px;
+                    overflow: hidden;
+                }
+                .place-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .place-info {
+                    padding: 15px;
+                }
+                .place-info h5 {
+                    margin: 0 0 5px;
+                    font-size: 1.1rem;
+                    color: #2d3436;
+                }
+                .place-info p {
+                    margin: 0;
+                    color: #636e72;
+                    font-size: 0.9rem;
+                    line-height: 1.4;
+                }
+
                 .trusted-sources-section {
                     margin-bottom: 50px;
                 }
