@@ -10,6 +10,10 @@ import DestinationPage from './pages/DestinationPage';
 import Gallery from './pages/Gallery';
 import DealsPage from './pages/DealsPage';
 import TravelHacks from './pages/TravelHacks';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 
 function App() {
     return (
@@ -28,6 +32,10 @@ function App() {
                             <Route path="/deals" element={<DealsPage />} />
                             <Route path="/deals/:slug" element={<DealsPage />} />
                             <Route path="/travel-hacks" element={<TravelHacks />} />
+                            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                            <Route path="/terms-of-service" element={<TermsOfService />} />
+                            <Route path="/about-us" element={<AboutUs />} />
+                            <Route path="/contact-us" element={<ContactUs />} />
                         </Routes>
                     </main>
                     <Footer />
