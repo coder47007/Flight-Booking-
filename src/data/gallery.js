@@ -304,7 +304,7 @@ export const travelGallery = {
         {
             id: 'car-8',
             title: 'Aston Martin Vantage',
-            image: 'https://images.unsplash.com/photo-1596385573612-aebef54acae4?w=800',
+            image: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800',
             type: 'Grand Tourer',
             url: carUrl('London')
         },
