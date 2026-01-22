@@ -84,8 +84,8 @@ This shift allows for more flexible weekend getaways, easier responses to emerge
         author: 'Travel Team',
         date: '2026-01-20',
         readTime: '5 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        keywords: ["cheap flights","summer travel","last minute deals","flight hacks","airfare savings","travel tips","breaking travel news"],
+        image: 'https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=800',
+        keywords: ["cheap flights", "summer travel", "last minute deals", "flight hacks", "airfare savings", "travel tips", "breaking travel news"],
         content: `
 # The Ultimate Summer Flight Hack: How to Score Cheap Last-Minute Airfare
 
@@ -162,8 +162,8 @@ Don't let the high cost of *planned* summer travel deter you. The impromptu, las
         author: 'Travel Team',
         date: '2026-01-18',
         readTime: '5 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        keywords: ["London flights","cheapest time to fly","travel hacks","flight deals","Kiwi.com analysis","UK travel","saving money on flights"],
+        image: 'https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?w=800',
+        keywords: ["London flights", "cheapest time to fly", "travel hacks", "flight deals", "Kiwi.com analysis", "UK travel", "saving money on flights"],
         content: `
 # WE CRUNCHED THE DATA: The Exact Cheapest Day and Month to Fly to London, Revealed by Kiwi.com Analysis
 
@@ -249,8 +249,8 @@ If you have the flexibility to travel outside of the high-demand summer months, 
         author: 'Travel Team',
         date: '2026-01-17',
         readTime: '5 min read',
-        image: 'https://images.unsplash.com/photo-1549033327-010537877e5d?w=800',
-        keywords: ["ChatGPT prompts","cheap flights 2025","AI travel booking","flight hacks","travel technology","travel savings"],
+        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800',
+        keywords: ["ChatGPT prompts", "cheap flights 2025", "AI travel booking", "flight hacks", "travel technology", "travel savings"],
         content: `
 # STOP Searching and START Asking: How AI Can Find Your Cheapest Flights
 
@@ -332,8 +332,8 @@ Travel booking in 2025 is less about clicking and more about sophisticated conve
         author: 'Travel Team',
         date: '2026-01-16',
         readTime: '4 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        keywords: ["Google Flights hacks","cheap flights 2024","flight booking tips","save money travel","Google Flights new features","travel hacks viral"],
+        image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800',
+        keywords: ["Google Flights hacks", "cheap flights 2024", "flight booking tips", "save money travel", "Google Flights new features", "travel hacks viral"],
         content: `
 # STOP Overpaying: Google Flights Just Dropped 3 Game-Changing Features You Must Use Now
 
@@ -401,8 +401,8 @@ If you haven't checked Google Flights lately, now is the time to dive back in. S
         author: 'Travel Team',
         date: '2026-01-15',
         readTime: '4 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        keywords: ["Google Flights hacks","cheap flights","travel hacks 2024","flight booking tips","Google Flights features","budget travel","flight deals"],
+        image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800',
+        keywords: ["Google Flights hacks", "cheap flights", "travel hacks 2024", "flight booking tips", "Google Flights features", "budget travel", "flight deals"],
         content: `
 # Google Flights Just Got a Massive Upgrade: Your New Secret Weapon for Saving Hundreds
 
@@ -482,8 +482,8 @@ Mastering these subtle new features will ensure you’re not just finding *a* ch
         author: 'Travel Team',
         date: '2026-01-14',
         readTime: '4 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        keywords: ["summer flight deals","last minute travel","cheap airfare","travel hacks","flight booking tips","peak season savings","fare calendar strategy"],
+        image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800',
+        keywords: ["summer flight deals", "last minute travel", "cheap airfare", "travel hacks", "flight booking tips", "peak season savings", "fare calendar strategy"],
         content: `
 # Last-Minute Summer Flights? The Secret 48-Hour Window to Score Deep Discounts
 
@@ -567,8 +567,8 @@ Stop panicking about peak season pricing. By employing these targeted, last-minu
         author: 'Travel Team',
         date: '2026-01-13',
         readTime: '5 min read',
-        image: 'https://images.unsplash.com/photo-1542150174-8846c4f90116?w=800',
-        keywords: ["last minute flights","cheap flights","travel hacks 2024","flight deals","last minute travel secrets","how to book cheap flights","Condé Nast Traveler tips"],
+        image: 'https://images.unsplash.com/photo-1501139083538-0139583c060f?w=800',
+        keywords: ["last minute flights", "cheap flights", "travel hacks 2024", "flight deals", "last minute travel secrets", "how to book cheap flights", "Condé Nast Traveler tips"],
         content: `
 # CRITICAL ALERT: The 10 Last-Minute Flight Secrets That Will Save You Hundreds Instantly
 
@@ -644,8 +644,8 @@ Start experimenting with these methods today, and you might find that your next 
         author: 'Travel Team',
         date: '2026-01-11',
         readTime: '4 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        keywords: ["holiday flights","cheap flights","travel hacks","christmas travel","thanksgiving flights","peak season booking","save money","flight deals"],
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800',
+        keywords: ["holiday flights", "cheap flights", "travel hacks", "christmas travel", "thanksgiving flights", "peak season booking", "save money", "flight deals"],
         content: `
 # The 5 Hidden Flight Hacks That Will Slash Your Holiday Travel Costs by 40% (Don't Book Before Reading!)
 
@@ -715,8 +715,8 @@ While there is no single magical day to book, historical data suggests that for 
         author: 'Travel Team',
         date: '2026-01-10',
         readTime: '5 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        keywords: ["cheap flights","last-minute deals","travel hacks","spontaneous travel","budget travel","flight booking tips","SEO flight tips","condé nast tips"],
+        image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800',
+        keywords: ["cheap flights", "last-minute deals", "travel hacks", "spontaneous travel", "budget travel", "flight booking tips", "SEO flight tips", "condé nast tips"],
         content: `
 # The Ultimate 10-Step Blueprint: How to Score Shockingly Cheap Last-Minute Flights
 
@@ -1548,7 +1548,7 @@ This data confirms that smart planningâ€”not just luckâ€”is the key to
         author: 'Travel Team',
         date: '2026-12-30',
         readTime: '4 min read',
-        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
+        image: 'https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=800',
         keywords: ["cheap flights", "airfare deals", "booking hacks", "best time to book", "travel hacks 2026", "saving money travel", "flight deals"],
         content: `
 # STOP Overpaying: The 7 Secret Airfare Hacks Experts Use to Book Cheap Flights Now
@@ -2002,7 +2002,7 @@ To lock in those 40% savings, you must be flexible on your departure/return date
         author: 'Travel Team',
         date: '2026-12-24',
         readTime: '6 min read',
-        image: 'https://images.unsplash.com/photo-1549418659-679930f4ff31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+        image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800',
         keywords: ["travel tech gadgets", "flight accessories", "noise-canceling headphones", "portable charger", "smart packing", "cheap flights"],
         content: `
 # Your Essential Travel Tech Kit: Gadgets to Master Modern Flying
@@ -2083,7 +2083,7 @@ Now that your tech kit is sorted, all that's left is to find your perfect itiner
         author: 'Travel Team',
         date: '2026-12-24',
         readTime: '7 min read',
-        image: 'https://images.unsplash.com/photo-1542129577-d6e8b7c7b8e5',
+        image: 'https://images.unsplash.com/photo-1471874708433-acd480424946?w=800',
         keywords: ["Hidden Gems Europe", "Underrated European Destinations", "Cheap Flights Europe", "Affordable Europe trips", "Off-the-Beaten-Path", "European Travel Deals"],
         content: `
 # Beyond Paris and Rome: Unearthing Europe's 7 Hidden Gem Destinations
@@ -2925,7 +2925,7 @@ Search for cheap flights and hotels to New York using our comparison tool above!
         author: 'Travel Team',
         date: '2026-11-10',
         readTime: '7 min read',
-        image: 'https://images.unsplash.com/photo-1529598598-e8cfd890f96e?w=800',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800',
         keywords: ['flight comparison sites', 'best flight booking sites', 'cheap flight finder', 'compare airline prices'],
         content: `
 # Best Flight Comparison Websites 2026
@@ -3128,9 +3128,12 @@ Search for flights and hotels above, then protect your trip with the right trave
 // Categories for filtering
 export const categories = [
     'All',
+    'Travel Hacks',
+    'Destination Guides',
     'Cheap Flights',
     'Travel Tips',
-    'Destination Guides'
+    'Airline News',
+    'Airport Guides'
 ];
 
 // Get post by slug

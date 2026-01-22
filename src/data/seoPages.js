@@ -489,7 +489,7 @@ export const seoPages = {
             h1: 'Cheap Flights from Miami to Bogota',
             origin: { city: 'Miami', code: 'MIA', country: 'USA' },
             destination: { city: 'Bogota', code: 'BOG', country: 'Colombia' },
-            heroImage: 'https://images.unsplash.com/photo-1568633702474-9a2e6df8a428?w=1600',
+            heroImage: 'https://images.unsplash.com/photo-1518225515067-a9dd8a2ede78?w=1600',
             avgPrice: '$249-500',
             flightTime: '3.5-4 hours',
             bestMonths: ['January', 'February', 'September', 'October'],
