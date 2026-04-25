@@ -3,6 +3,65 @@
 
 export const blogPosts = [
     {
+        id: 1777110254683,
+        slug: 'the-truth-behind-14-pound-flights-airline-secrets',
+        title: 'The Secret Behind £14 Flights: Why Airlines Lose Money to Get You in the Air',
+        excerpt: 'Ever wondered how a flight can cost less than a taxi to the airport? We reveal the \'loss leader\' strategy airlines use and how you can exploit it for maximum savings.',
+        category: 'Travel Hacks',
+        author: 'Travel Team',
+        date: '2026-04-25',
+        readTime: '4 min read',
+        image: 'https://images.unsplash.com/photo-1544016768-982d1554f0b9?w=800',
+        keywords: ["cheap flights","budget airlines","travel hacks","Ryanair deals","airline pricing secrets","flight booking tips"],
+        content: `
+# The Real Truth About £14 Flights: Why Airlines Are Happy to Lose Money on Your Seat
+
+We’ve all seen them: those jaw-dropping headlines offering flights to Europe for the price of a gourmet sandwich. Whether it's a £14 hop to Dublin or a £19 flight to the sun-drenched coast of Spain, the math simply doesn't seem to add up. How can an airline pay for fuel, staff, airport taxes, and maintenance when you’re paying less than twenty quid?
+
+The short answer? They can’t. In many cases, when you book one of these ultra-low-cost fares, the airline is actually losing money on your seat. But there is a method to the madness. As a traveler, understanding this "loss leader" strategy is the ultimate key to unlocking a world of budget travel.
+
+## The 'Loss Leader' Strategy Explained
+
+In the retail world, a "loss leader" is a product sold at a price below its market cost to stimulate other sales of more profitable goods or services. Supermarkets do it with milk and bread; airlines do it with seats.
+
+When a budget carrier like Ryanair, EasyJet, or Wizz Air advertises a £14 fare, they are essentially paying for the privilege of having you on board. Between the UK’s Air Passenger Duty (APD), airport landing fees, and fuel costs, the airline is often in the red before you’ve even buckled your seatbelt. 
+
+However, they aren't doing this out of the goodness of their hearts. They are betting on the "ancillary revenue"—the extras that most passengers can’t resist.
+
+### How They Make Their Money Back
+
+If the seat is the bait, the extras are the hook. Airlines have mastered the art of the upsell. Here is where your £14 flight turns into a £100 journey for the unwary:
+
+1.  **Baggage Fees:** This is the big one. Checking a bag or even bringing a large carry-on can often cost double or triple the price of the base fare.
+2.  **Seat Selection:** Want to sit next to your travel partner? That’ll be £10 to £20 per person.
+3.  **On-board Sales:** From £3 bottles of water to scratchcards and overpriced paninis, the cabin is a floating convenience store with a captive audience.
+4.  **Priority Boarding:** The fear of not having overhead bin space drives thousands of passengers to pay for early boarding.
+
+## The Battle for Airport Slots
+
+There is another, more secretive reason for these ultra-cheap flights: "Use it or lose it" slot rules. Major airports have a limited number of takeoff and landing slots. If an airline doesn't use a certain percentage of its allocated slots, it risks losing them to a competitor. 
+
+During periods of low demand, it is often cheaper for an airline to sell seats for £10—or even fly an empty plane—than to lose a multi-million-pound slot at a hub like London Gatwick or Manchester Airport.
+
+## What This Means for Travelers
+
+This "broken" economic model is actually a goldmine for savvy travelers who know how to play the game. If you can avoid the traps, you are essentially being subsidized by the airline and the passengers who pay for the extras.
+
+### How to Win at the Budget Flight Game:
+
+*   **The Personal Item Challenge:** To truly fly for £14, you must master the art of the small backpack. If it fits under the seat in front of you, it’s usually free. Invest in a dedicated "personal item" bag that maximizes every inch of the allowed dimensions.
+*   **Skip the Extras:** Be the passenger the airline hates. Bring your own water (refill after security), pack your own snacks, and let the airline’s algorithm choose your seat for you. If you're traveling with friends, you can always hang out once you land.
+*   **Book Mid-Week:** These ultra-low fares are rarely available on Friday evenings or Sunday afternoons. Look for Tuesday and Wednesday departures to find the true "loss leader" prices.
+*   **Check Alternative Airports:** The cheapest flights often fly into secondary airports (like Paris Beauvais instead of Charles de Gaulle). Calculate the cost of the bus or train into the city before you book to ensure the "deal" is still a deal.
+
+### The Verdict
+
+When you see a £14 flight, don't ask "What's the catch?" Instead, ask "How can I avoid the catch?" Airlines are willing to lose money on your seat to keep their planes moving and their slots secure. By staying disciplined and avoiding the enticing upsells, you can see the world for less than the cost of a cinema ticket. 
+
+Happy (and cheap) travels!
+        `
+    },
+    {
         id: 1776939424931,
         slug: 'vpn-travel-hack-cheaper-flights-truth',
         title: 'The VPN Travel Hack: Does Masking Your Location Actually Save You Hundreds on Flights?',
