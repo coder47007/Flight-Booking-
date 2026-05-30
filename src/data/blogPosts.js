@@ -3,6 +3,87 @@
 
 export const blogPosts = [
     {
+        id: 1780137866293,
+        slug: 'truth-behind-14-pound-flights-airline-secrets',
+        title: 'The Truth Behind £14 Flights: How Airlines Lose Money (And How You Can Win)',
+        excerpt: 'Ever wondered how budget airlines survive selling plane tickets for the price of a sandwich? We pull back the curtain on the secret economics of ultra-low-cost flights.',
+        category: 'Travel Hacks',
+        author: 'Travel Team',
+        date: '2026-05-30',
+        readTime: '4 min read',
+        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
+        keywords: ["cheap flights","budget airlines","travel hacks","airline secrets","flight deals","Ryanair hacks"],
+        content: `
+# The Truth Behind £14 Flights: How Airlines Lose Money (And How You Can Win)
+
+We’ve all seen them: those eye-popping, head-turning flight deals offering one-way tickets to mainland Europe for just £14.99. In an era where a train ticket to the next town over can cost a small fortune, it seems impossible that a multi-million pound jet can fly you across the continent for the price of a pub lunch.
+
+Here is the industry secret: **the airlines are actually losing money on those seats.**
+
+When you buy a £14 ticket, you are taking advantage of a highly calculated psychological game. If you know the rules, you can fly around the world for pennies. If you don't, you end up funding the airline’s profit margins. Here is how the economics of ultra-low-cost carriers (ULCCs) really work, and how you can beat them at their own game.
+
+---
+
+## The 'Loss Leader' Strategy
+
+In retail, a 'loss leader' is a product sold at a price below its market cost to stimulate other, more profitable sales. Supermarkets do it with milk and bread; budget airlines like Ryanair, Wizz Air, and EasyJet do it with flight seats.
+
+When an airline sells you a ticket for £14, that money often doesn’t even cover the government passenger taxes and airport departure fees, let alone the fuel, crew wages, and maintenance costs. The airline is actively taking a financial hit the moment you press 'book'.
+
+But they do it because they are banking on the 'ancillary squeeze'. 
+
+### The Math Behind Ancillary Revenue
+
+Budget airlines do not view themselves as transportation companies; they view themselves as real estate developers. Your seat is a tiny plot of land, and they want to rent you everything surrounding it. 
+
+Statistically, the majority of passengers will purchase at least one add-on. These include:
+
+*   **Cabin Baggage:** Up to £30 each way to bring a standard trolley bag.
+*   **Seat Selection:** Up to £15 to sit next to your travel partner.
+*   **Priority Boarding:** £10–£20 to get on the plane first.
+*   **In-flight Purchases:** £3.50 for a bottle of water, £6 for a soggy toastie.
+*   **Hidden Commission:** Car rentals, hotel bookings, and travel insurance pushed during checkout.
+
+By the time the average traveler checks out, that £14 flight has quietly morphed into an £80 flight. The airline has not only recovered their loss—they have made a healthy profit.
+
+---
+
+## The Secret Battle for Airport Slots
+
+There is another reason airlines sell tickets at a loss: the 'use-it-or-lose-it' airport slot rule. 
+
+At major airports, airlines are allocated specific takeoff and landing times (slots). Under international aviation laws, an airline must use its allocated slots at least 80% of the time. If they fail to do so, they lose the slot to a competitor.
+
+During periods of low demand, it is cheaper for an airline to practically give tickets away for £10 to fill the plane than to fly an empty 'ghost flight' or lose a multi-million-pound slot at Heathrow, Gatwick, or Dublin. You, the traveler, are essentially doing them a favor by sitting in that seat.
+
+---
+
+## How to Fly for £14 (Without Spending a Penny More)
+
+To successfully exploit these loss-making fares, you must be a disciplined traveler. If you want to beat the airlines at their own game, follow these golden rules:
+
+### 1. Master the Under-Seat 'Personal Item' Bag
+Avoid the cabin bag fee entirely. Most budget airlines allow one 'personal item' (typically 40x20x25cm) for free. Invest in a dedicated under-seat travel backpack. You can easily pack for a 3-to-4-day weekend trip using compression cubes and rolling your clothes.
+
+### 2. Play Seat Roulette
+Do not pay to select your seat. Unless you are traveling with young children (where airlines are legally required to seat families together), just accept the random seat allocation. Yes, you might be in the middle seat on row 26, but for a 2-hour flight, is it really worth £15 to sit five rows forward?
+
+### 3. Eat and Drink Before You Board
+Airport and airplane food markup is notoriously high. Bring an empty water bottle through airport security and fill it up at a water fountain for free. Pack your own sandwiches, snacks, and sweets. 
+
+### 4. Bypass the Checkout Traps
+When booking, the airline’s website will try to scare you with pop-ups warning that 'prices are rising' or that you are 'unprotected'. Ignore the noise. Decline the insurance, skip the car hire, and say no to SMS updates.
+
+---
+
+## What This Means for Travelers
+
+Ultimately, the existence of £14 flights is a massive win for flexible, savvy travelers. The budget airline business model relies on 'cross-subsidization'—meaning the passengers who pay for large suitcases, seat selections, and scratch cards are actively subsidizing the cheap tickets of those who don't.
+
+By traveling light, packing your own lunch, and remaining flexible on your destination, you can travel across Europe for less than the cost of a daily commute. Let the other passengers pay the airline's bills while you enjoy the journey for next to nothing.
+        `
+    },
+    {
         id: 1779970827230,
         slug: 'ultimate-guide-cheap-domestic-flights-usa-2026',
         title: 'The 2026 US Flight Hack: How to Score Dirt-Cheap Domestic Tickets This Year',
